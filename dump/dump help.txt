@@ -1,0 +1,1 @@
+mysql -u USER -pPASSWORD DATABASE < /path/to/dump.sql

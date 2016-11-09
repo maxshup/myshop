@@ -1,4 +1,4 @@
-<?php require '../src/view/header.php'; ?>
+<?php require ROOT . '/src/views/layouts/header.php'; ?>
   <div class="contacts">
     <p>
 		<h1>Свяжитесь с нами</h1>
@@ -12,7 +12,7 @@
     <br><br>
     </p>
   </div>
-  <?php require '../src/view/footer.php'; ?>
+  <?php require ROOT . '/src/views/layouts/footer.php'; ?>
   	<!-- <div class="footer">
     	<p>
       	&copy; Star Wars Toys Shop

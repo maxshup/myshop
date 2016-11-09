@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<style>
+			
 		</style>
 	</head>
 	<body>
@@ -14,6 +15,6 @@
 	        	<a href = "/" Title = "Star Wars Toys Shop"><h1>Star Wars Toys Shop - Best Shop!</h1></a>
 	        </div>
 	        <div class="header_pic">
-	        	<img src="logo.jpg" height="120">
+	        	<img src="/images/logo.jpg" height="120">
 	        </div>	
 		</div>

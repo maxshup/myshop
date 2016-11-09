@@ -1,5 +1,5 @@
-<?php require '../src/view/header.php'; ?>
-<div class="about" align="left">
+<?php require ROOT . '/src/views/layouts/header.php'; ?>
+<div class="about">
 	<h2>Мы рады приветствовать Вас!</h2>
 	<p>Наш магазин был основан только что, но мы полны уверенности в успехе!</p>
 	<p>
@@ -10,8 +10,8 @@
 		<li>Выгодные цены;</li>
 		<li>Несуществующая система обратной связи;</li>	
 		<li>Обмен бракованных товаров;</li>
-		<li>Пока!;</li>
+		<li>Пока!</li>
 	</ul>
 	<p>Мы всегда Вам рады!</p>	
 </div>	
-<?php require '../src/view/footer.php'; ?>
+<?php require ROOT . '/src/views/layouts/footer.php'; ?>
