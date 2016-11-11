@@ -1,28 +1,14 @@
-<?php require '../src/views/layouts/header.php'; ?>
-		
-<div class="container">
-	<div class="menu">
-		<div class="menu_heading"><b>Меню</b></div>
-			<ul>
-				<li><a href="/">Главная</a></li>
-				<li>Категории</li>
-				<ul>
-					<?php foreach ($categories as $categoryItem): ?>
-					<li><a href="/category/<?php echo $categoryItem['id'];?>">
-						<?php echo $categoryItem['name'];?></a>
-					</li>
-						<?php endforeach; ?>
-				</ul>
-					<li><a href="#">Оплата</a></li>
-					<li><a href="/about">О магазине</a></li>
-					<li><a href="/contacts">Контакты</a></li>
-			</ul>
-		</div>	
-	</div>
+<?php require '../src/views/layouts/header.php';?>		
+<?php require '../src/views/layouts/menu.php';?>
+
 	<div class="content">
-		<div class="box_content">
-			<div class="content_heading"><b>Наши товары</b></div>
+			<div class="content_heading">
+				<h2>
+					Наши товары
+				</h2>
+			</div>
 				<div class="content_product">
+				<div class="box_content">
 					<?php foreach ($products as $row): ?>
 						<div class="product">
 							<div class="product_image">
@@ -47,13 +33,17 @@
 								</b>
 							</div>
 							<div class="product_order_main">
-								<input type="submit" name="product_order_main" value="Заказать" class="button">
+								<!-- <input type="submit" name="product_order_main" value="Заказать" class="button"> -->
+								<button type="submit" class="button">
+									<a href="/order/<?php echo $row['id']; ?>">Заказать</a>
+								</button>	
 							</div>	
 						</div>
+						<?php $_SESSION = $row;?>
 					<?php endforeach; ?>
 				</div>	
-			</div>		
-		</div>			
+				</div>	
+			</div>					
 		 <!-- '../src/views/content.php'; --> 
 	</div>
 </div>

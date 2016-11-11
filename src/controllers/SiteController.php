@@ -32,4 +32,10 @@ class SiteController
  		require_once ROOT . '/src/views/pages/about.php';
  		return true;
  	}
+
+ 	public function actionOrder() 
+ 	{
+ 		require_once ROOT . '/src/views/pages/order.php';
+ 		return true;
+ 	}
 }

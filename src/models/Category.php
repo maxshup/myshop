@@ -7,17 +7,10 @@ class Category
 	{
 
 		$dbconnection = Db::DbConnection();
-
         $statement = $dbconnection->query("SELECT id, name FROM categories ");
 		$statement->setFetchMode(PDO::FETCH_ASSOC);
 		$row = $statement->fetchAll();
 		return $row;		
-	}
-
-	public static function breadCrumbs($categories)
-	{
-
-	
 	}
 }
 

@@ -20,7 +20,7 @@ class Product
 		
 		$dbconnection = Db::DbConnection();
 
-        $statement = $dbconnection->query("SELECT id, name, brief_description, price, picture FROM products WHERE category_id = '$categoryId'");
+        $statement = $dbconnection->query("SELECT id, name, brief_description, price, picture, category_id FROM products WHERE category_id = '$categoryId'");
         $rows = $statement->fetchAll();
 		return $rows;
 		
