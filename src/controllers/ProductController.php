@@ -18,4 +18,3 @@ require_once ROOT . '/src/models/Product.php';
  		return true;
  	}
 }
-

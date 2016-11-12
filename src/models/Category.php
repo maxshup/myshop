@@ -13,4 +13,3 @@ class Category
 		return $row;		
 	}
 }
-

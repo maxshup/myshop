@@ -13,9 +13,3 @@
     </p>
   </div>
   <?php require ROOT . '/src/views/layouts/footer.php'; ?>
-  	<!-- <div class="footer">
-    	<p>
-      	&copy; Star Wars Toys Shop
-     	все права защищены.
-    	</p>
-  	</div> -->

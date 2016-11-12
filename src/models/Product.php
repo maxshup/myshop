@@ -17,13 +17,11 @@ class Product
 
 	public static function getProductsFromCategory($categoryId)
 	{
-		
+	
 		$dbconnection = Db::DbConnection();
-
         $statement = $dbconnection->query("SELECT id, name, brief_description, price, picture, category_id FROM products WHERE category_id = '$categoryId'");
         $rows = $statement->fetchAll();
 		return $rows;
-		
 	}
 
 	public static function productsById($id)

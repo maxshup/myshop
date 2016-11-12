@@ -5,7 +5,7 @@ class Router
 
 	private $routes;
 
-	public function __construct() //Метод конструктор
+	public function __construct()
 	{
 
 		$routesPath = ROOT.'/src/config/routes.php';
@@ -20,10 +20,9 @@ class Router
 		}
 	}
 
-	public function run() //Метод run, который будет принимать управление от frontController
+	public function run()
 	{
 
-		//Получить строку запроса
 		$uri = $this->getURI();
 		
 		foreach ($this->routes as $uriPattern => $path) {

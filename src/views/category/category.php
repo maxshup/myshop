@@ -1,5 +1,6 @@
 <?php require ROOT . '/src/views/layouts/header.php';?>
 <?php require '../src/views/layouts/menu.php';?>
+
 <div class="content">
 	<div class="category_heading">
 		<h2>
@@ -13,7 +14,7 @@
 		</h2>
 	</div>
 	<div class="category_box">
-			<?php foreach ($categoryProducts as $productCategory): ?>
+		<?php foreach ($categoryProducts as $productCategory): ?>
 			<div class="product">
 				<div class="product_image">
 					<img src=<?php echo $productCategory['picture']; ?> width="240" height="241">
@@ -42,8 +43,7 @@
 					</button>	
 				</div>	
 			</div>
-			<?php $_SESSION = $productCategory;?>
-			<?php endforeach; ?>
+		<?php endforeach; ?>
 	</div>		
 </div>
 <?php require ROOT . '/src/views/layouts/footer.php'; ?>

@@ -1,4 +1,5 @@
 <?php require ROOT . '/src/views/layouts/header.php'; ?>
+
 <div class="about">
 	<h2>Мы рады приветствовать Вас!</h2>
 	<p>Наш магазин был основан только что, но мы полны уверенности в успехе!</p>
@@ -13,5 +14,6 @@
 		<li>Пока!</li>
 	</ul>
 	<p>Мы всегда Вам рады!</p>	
-</div>	
+</div>
+
 <?php require ROOT . '/src/views/layouts/footer.php'; ?>
